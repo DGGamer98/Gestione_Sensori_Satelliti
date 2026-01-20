@@ -24,4 +24,19 @@ public class Transformer {
         
         return sensoreDTO;
     }
+    
+    
+    //Trasformazione di oggetti DTO in Model
+    public Sensore fromDtoToModel(SensoreDTO senDTO) {
+        
+        Sensore sens = new Sensore();
+        
+        sens.setId(senDTO.getId());
+        sens.setNome(senDTO.getNome());
+        sens.setSatelliteId(senDTO.getSatelliteId());
+        sens.setTipo(senDTO.getTipo());
+        sens.setAttivo(senDTO.isAttivo());
+   
+        return sens;
+    }
 }
