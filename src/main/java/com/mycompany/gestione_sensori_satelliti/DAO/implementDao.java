@@ -46,10 +46,10 @@ public class implementDao implements SensoreDAO {
             System.out.println("Impossibile aggiornare il sensore");
         } else {
             database.put(s.getId(), s);
-            System.out.println("Database aggiornato");
+            System.out.println("Oggetto nel database aggiornato");
         }
     }
-
+    
     @Override
     public void delete(int id) {
         database.remove(id);
